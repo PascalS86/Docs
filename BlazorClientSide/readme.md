@@ -2,7 +2,7 @@
 
 We have a couple of options for creating a web application and host it. So this is not brand new. But inspired by Cecil Phillips (@cecilphillip on twitter) and Burke Hollands (@burkeholland on twitter) session on build 2019 (https://mybuild.techcommunity.microsoft.com/sessions/77173?source=sessions#top-anchor), so I was thinking how can I set this up for private projects as cheap as possible.
 
-Thankfully Microsoft Azure, Amazon AWS and Netlify (oh thank you Sarah Edo * @sarah_edo on twitter * for open my eyes about Netlify) provide a couple of features and services, that you can use for exactly that.
+Thankfully Microsoft Azure, Amazon AWS and Netlify (oh thank you Sarah Drasner (@sarah_edo on twitter) for open my eyes about Netlify) provide a couple of features and services, that you can use for exactly that.
 
 # What is this about?
 
