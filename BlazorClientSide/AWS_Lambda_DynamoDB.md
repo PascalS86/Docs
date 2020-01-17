@@ -38,7 +38,7 @@ dotnet lambda deploy-serverless --help
 You can test our deplyoment with the .NETCore CLI or with Postman. I'm going to check it out with postman (https://www.getpostman.com/).
 
 Postman is the tool I use to test API calls. It has everything to set up the Http calls to AWS. An authorization-helper for AWS is out of the box available. 
-![Postman](images\postman-auth-aws.PNG)
+![Postman](images/postman-auth-aws.PNG)
 As you can see, you select the authorization type and enter, what is needed. The http request will automatically generate the right settings.
 
 ## DynamoDB in lambda function

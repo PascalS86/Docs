@@ -47,20 +47,20 @@ I created a web application with blazor (webassembly)  (https://docs.microsoft.c
 ## DATASTORE
 For the datastore, I'll use Amazon AWS DynamoDB, which offers a 25 GB NoSQL Storage for free (https://aws.amazon.com/dynamodb/features/). In that case, it's cheaper than Azure Table Storage, as long as you don't have massive data and CRUD operations. 
 
-![Amazon DynamoDB](images\dynamoDB-freetier.PNG)
+![Amazon DynamoDB](images/dynamoDB-freetier.PNG)
 
 ## ACCESS FROM WASM
 For accessing the data, I'm going to use lambda function in AWS (https://aws.amazon.com/lambda/features/). This is needed, because back in 1/10/20 there was an issue with the SDK, when you use wasm for you blazor application. So we are serverless here (Simona Contin (@simona_cotin on twitter) will cheer for that setup approach :D). For private purpose I use lambda function instead of azure functions (https://azure.microsoft.com/en-us/services/functions/), because they are cheaper for my scenario (private application, and let's face it, the traffic is not that much).
 
-![Amazon Lambda](images\lambda.PNG) 
+![Amazon Lambda](images/lambda.PNG) 
 
 ## AUTHENTICATION/AUTHORIZATION
 For authenticate the user, I decided to go for Azure AD B2C (https://azure.microsoft.com/en-us/services/active-directory-b2c/). It has free tier and provides us with the user administration from Azure AD. Keep in mind, that this is a serverless application, which means our code is mostly execute on client-side. This means **"authentication checks can be bypassed because all client-side code can be modified by users. The same is true for all client-side app technologies, including JavaScript SPA frameworks or native apps for any operating system."** (https://docs.microsoft.com/en-us/aspnet/core/security/blazor/?view=aspnetcore-3.1&tabs=visual-studio-code). We use the authentication mechanism to pass them to our AWS lambda function to and work with the permissions, we need. 
 
-![Azure AD B2C](images\azure-ad-freetier.PNG)
+![Azure AD B2C](images/azure-ad-freetier.PNG)
 
 
 
 ## HOSTING
 I'm going to use Netlify for hosting my blazor application. Find out more (https://www.netlify.com/). For private projects or proof of concepts, they offer a free tier. 
-![Netlify Pricing](images\netflify-pricing.png)
+![Netlify Pricing](images/netflify-pricing.png)
