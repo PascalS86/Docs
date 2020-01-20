@@ -11,7 +11,7 @@ What are we going to do? Well, this is all about cheap as possible solution for 
 This doc will contain three parts:
 1. [AWS DynamoDB and AWS Lambda](AWS_Lambda_DynamoDB.md)
 2. [Azure AD B2C](Azure_AD_B2C.md)
-3. Host on Netlify
+3. [Host on Netlify](Host_on_Netlify.md)
 
 # Who is this for?
 Well, I decided to write it down primarly as a reminder for myself. But it's publicly available, soooo.... To understand the scenario, the linked project source code and the scenario, you should at least have:
@@ -64,3 +64,6 @@ For authenticate the user, I decided to go for Azure AD B2C (https://azure.micro
 ## HOSTING
 I'm going to use Netlify for hosting my blazor application. Find out more (https://www.netlify.com/). For private projects or proof of concepts, they offer a free tier. 
 ![Netlify Pricing](images/netflify-pricing.png)
+
+# Some words
+Keep your eyes open, what you can get for free from the big cloud providers like Microsoft, Google or Amazon. There is much you can do, without spending a dollar. And thanks to plattforms like netlify, we can provide solutions in a great environment and enrich our development process with provided automated tasks. So, thanks again for the greate inspiration.
