@@ -60,7 +60,7 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_APP_ID: ${{ secrets.NETLIFY_APP_ID }}
       with:
-          args: deploy --dir=BlazorOnNetlify/dist --prod #push dist folder to Netlify
+          args: deploy --dir=[published folder] --prod #push dist folder to Netlify
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_APP_ID"]' 
 ```
 
