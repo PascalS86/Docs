@@ -58,10 +58,10 @@ jobs:
       uses: netlify/actions/cli@master #uses Netlify Cli actions
       env: # these environment variables are added in github secrets
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_APP_ID: ${{ secrets.NETLIFY_APP_ID }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       with:
-          args: deploy --dir=[published folder] --prod #push dist folder to Netlify
-          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_APP_ID"]' 
+          args: deploy --dir=BlazorOnNetlify/dist --prod #push dist folder to Netlify
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]' 
 ```
 
 After this is all setup and push the changed sourcecode back to GitHub, the workflow should start. After it's done, the website should be available on netlify.
