@@ -36,7 +36,7 @@ If you try to link it to the project, it could take some more time.
 But, as I'm used to numbers for my estimation, I'm going to give you one:
 * PART I (*reading:* **10 minutes**, *doing:* **45 minutes**)
 * PART II (*reading:* **10 minutes**, *doing:* **60 minutes**)
-* PART III (*reading:* **- minutes**, *doing:* **- minutes**)
+* PART III (*reading:* **5 minutes**, *doing:* **20 minutes**)
 
 # How is the setup?
 
