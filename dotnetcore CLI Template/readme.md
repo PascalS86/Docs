@@ -18,7 +18,7 @@ You should have a general idea about the CLI itself (https://docs.microsoft.com/
 
 # Where can you find the project?
 The linked projects are here:
-* TODO: Add link
+* My Blazor WASM Template  -> https://github.com/PascalS86/blazor.wasm.template
 
 
 # How long will it take?
