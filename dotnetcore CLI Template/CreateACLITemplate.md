@@ -33,9 +33,10 @@ Just replace the content to fit your needs.
 * **name** is the displayname
 * **shortName** is the name, used in the dotnet cli
 
-## STEP 2: Pack your template as a nuget package
-With the dotnet cli, it's quite easy to pack your template.
-
+## STEP 2: publish your template
+Well, usually you can do this with nuget.
+To do this, you can make use of the dotnet cli.
+It's quite easy to pack your template.
 You can pack it with the command 
 ```
 dotnet pack
@@ -64,9 +65,10 @@ You have to add and specify the following tags under &lt;PropertyGroup&gt;:
 * &lt;Description&gt;
 * &lt;PackageTags&gt;
 * &lt;TargetFramework&gt;
-* &lt;IsPackable&gt; (have to be true)
-
-
+* &lt;IsPackable&gt; to *true*
+* Set &lt;IncludeContentInPack&gt; to *true*
+* Set &lt;IncludeBuildOutput&gt; to *false*
+* Set &lt;ContentTargetFolders&gt; to *content*
 
 
 In this scenario, it'll look something like this:
@@ -81,9 +83,14 @@ In this scenario, it'll look something like this:
     <Authors>Me</Authors>
     <Description>Template for a console application</Description>
     <PackageTags>dotnet-new;templates;simpleproject</PackageTags>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <IsPackable>true</IsPackable>
+    
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
   </PropertyGroup>
+
 
 </Project>
 ```
@@ -92,7 +99,22 @@ Navigate to you where your project is (e.g. .csproj). Run the command
 ```
 dotnet pack
 ```
-and you'll have a package to install.
+and you'll have a nuget package.
 
 # STEP 3: Install your package
+You got some option to do the installation now.
+The simplest solution (in my opionion) is to it with the dotnet cli.
 
+You use the command *dotnet new -i &lt;PATH_TO_PARENT_OF_.template.config&gt;
+
+In our scenario, it'll look something like this:
+```
+dotnet new -i "project_folder/myTemplate"
+```
+
+This will install your template.
+
+To remove it again, you can just replace *-i* with *-u*
+
+# Some final words
+3 steps to create a reuasble template for dotnet core. Isn't that just amazing? It's not much of an overhead to do and the benefit is just asthonishing. Try it out!
