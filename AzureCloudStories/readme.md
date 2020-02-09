@@ -6,7 +6,7 @@ This story will cover up what and how we used Azure provided Services to enrich 
 
 
 ## WHAT IS THIS ABOUT?
-This story shows how we used Azure Notebooks for providing an interactive learning experience. In addition to that, our students had to work on a project, which was about an autonomous vehicle that should navigate to a specific target. For that Custom Vision was introduced to the students and we used Azure Cognitive Service as an applied cloud service for that project.
+This story shows how we used Azure Notebooks for providing an interactive learning experience in class. In addition to that, our students had to work on a project, which was about an autonomous vehicle that should navigate to a specific target. For that Custom Vision was introduced to the students and we used Azure Cognitive Service as an applied cloud service for that project.
 
 I'm going to describe, why and how we used Azure Notebooks in our class. Also, you'll see how it's possible to use Azure Cognitive Services within Azure Notebooks which will then transit into the usage within the student projects.  
 
