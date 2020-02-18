@@ -11,5 +11,6 @@ Let's do it
 3. Build App for BotFramework Backend (dotnet core)
 4. Build WebChannel (with blazor)
 5. Host on AWS
-6. Host WebChannel on Netlify
+6. Host on Docker
+6. Host on Netlify
 
