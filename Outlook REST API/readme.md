@@ -6,6 +6,7 @@ Hopefully, Microsoft will add this feature again. But who knows...
 In this doc I write down the basic steps to create an app to work with those objects in general.
 
 # What is this about?
+This is about accessing the environment of an Microsoft account throuhg the graph API and work with it. I provide a scenario and some sample snippets how to access the API and how to work with it. It should give an idea how you to use it.
 
 # Who is this for?
 
