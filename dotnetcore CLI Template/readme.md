@@ -9,7 +9,7 @@ So, I'm going to take you through the needed steps to create a template that can
 We're going to that for a project. Lately I worked a lot with blazor (https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) and so I'm going to set this up based on a blazor project. But you can do it with any other. I'm going to point out the neccessary steps based on the Microsoft docs (https://docs.microsoft.com/de-de/dotnet/core/tools/custom-templates). You can and should check them out as well (@docsmsft on Twitter).
 
 The details can be found here:
-* [Create a cli template](CreateACLITemplate.md.md)
+* [Create a cli template](CreateACLITemplate.md)
 
 # Who is this for?
 This is for dotnet core developers, that are working in the dotnet core ecosystem.
