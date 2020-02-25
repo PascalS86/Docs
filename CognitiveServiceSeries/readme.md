@@ -1,0 +1,1 @@
+This will cover up my expierence and setups with Azure Cognitive Service to enrich apps with AI
