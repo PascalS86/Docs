@@ -12,5 +12,6 @@ Let's do it
 4. Build WebChannel (with blazor)
 5. Host on AWS
 6. Host on Docker
-6. Host on Netlify
+7. Host on Netlify
+8. Host on Azure
 
