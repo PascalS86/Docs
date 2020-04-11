@@ -23,7 +23,7 @@ This doc contains two parts:
 
 The first part is all about setting up the needed services and include them in dotnetcore project. We do also the testing with the botframework emulator.
 The second part is all about rounding up the deployment settings on azure and make it all accessible.
-* PART I (*reading:* **15 minutes**, *doing:* **45 minutes**)
+* PART I (*reading:* **5 minutes**, *doing:* **30 minutes**)
 * PART II (*reading:* **5 minutes**, *doing:* **20 minutes**)
 
 # SETUP NOTES:
