@@ -38,6 +38,9 @@ You'll see some other options in the msteams *manifest.json* file.
 ```
 That's it for making your web app ready.
 
+#### Notes
+If you test your app locally with ngrok, be sure you setup localhost, or at least set up ssl-certificate to the original route of your machine. Otherwise the desktop app of MS Teams won't show you the content (at least by now).
+
 ## To dos for deploying to MS Teams
 Microsoft provides three distribution scenarios (https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/overview). I'll focus on the sideloading scenario because this is really easy and can speed up the deployment of business-specific solutions. 
 
